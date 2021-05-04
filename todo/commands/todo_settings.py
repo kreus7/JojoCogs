@@ -149,7 +149,7 @@ class Settings(ToDoMixin):
             await ctx.send(
                 "I can't dm you! If you would like to use private lists, please allow me to dm you"
             )
-            await self.config.user(ctx.author).private.set(False)
+            await self.config.user(ctx.author).private.clear()
         else:
             return
         if await ctx.embed_requested() and embed:
