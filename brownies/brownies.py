@@ -43,7 +43,7 @@ class PluralDict(dict):
 
 
 class Brownies(commands.Cog):
-    """[botname] loves brownies, and will steal from others for you!"""
+    """[bot] loves brownies, and will steal from others for you!"""
 
     __author__ = ["JJW (V2)", "Jojo#7791"]
     __version__ = "0.1.0"
@@ -113,7 +113,7 @@ class Brownies(commands.Cog):
 
     def format_help_for_context(self, ctx):
         return (
-            f"{super().format_help_for_context(ctx)}"
+            f"{super().format_help_for_context(ctx)}\n"
             f"\n**__Version__**: {self.__version__}"
             f"\n**__Authors__**: {', '.join(self.__author__)}"
         )
