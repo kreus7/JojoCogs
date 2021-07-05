@@ -3,7 +3,7 @@
 # Copyright (c) 2021 - Jojo#7791
 # Licensed under MIT
 
-import asyncio
+import asyncio#
 import io
 import logging
 from contextlib import suppress
